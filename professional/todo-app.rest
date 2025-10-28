@@ -1,0 +1,53 @@
+### GET /
+GET http://localhost:8000
+
+### POST /auth/register
+POST http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+  "username": "emienoh1405@gmail.com",
+  "password": "testitest"
+}
+
+### POST /auth/login
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{
+  "username": "emienoh1405@gmail.com",
+  "password": "testitest"
+}
+
+### Fetch all todos GET /todos
+GET http://localhost:8000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYxNjc2NTU0LCJleHAiOjE3NjE3NjI5NTR9.Mngv9Ov-1et6cYV76aYnGvOHI2r5uwm46A_vr3sVvA8
+
+### CREATE a new todo POST /todo
+POST http://localhost:8000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYxNjc2NTU0LCJleHAiOjE3NjE3NjI5NTR9.Mngv9Ov-1et6cYV76aYnGvOHI2r5uwm46A_vr3sVvA8
+Content-Type: application/json
+
+{
+    "task": "Finish coding the project"
+}
+
+
+### UPDATE a todo PUT /todos/:id
+PUT http://localhost:8000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYxNjc2NTU0LCJleHAiOjE3NjE3NjI5NTR9.Mngv9Ov-1et6cYV76aYnGvOHI2r5uwm46A_vr3sVvA8
+Content-Type: application/json
+
+{
+  "completed": 1
+}
+
+
+### DELETE a todo DELETE /todos/:id
+DELETE http://localhost:8000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYxNjc2NTU0LCJleHAiOjE3NjE3NjI5NTR9.Mngv9Ov-1et6cYV76aYnGvOHI2r5uwm46A_vr3sVvA8
+Content-Type: application/json
+
+{
+  "completed": 1
+}

@@ -1,0 +1,24 @@
+{
+  "name": "professional",
+  "version": "1.0.0",
+  "description": "A dockerized full stack todo application that uses a NodeJS backend, a PostgreSQL database, a Prisma ORM and JWT Athentication",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file=.env --experimental-strip-types --experimental-sqlite ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Emmanuel Enoh",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.18.0",
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "prisma": "^6.18.0"
+  }
+}
